@@ -1,0 +1,27 @@
+node_modules/
+reports/
+.stryker-tmp/
+test-results/
+playwright-report/
+.playwright-mcp/
+coverage/
+.claude/worktrees/
+
+# Next.js
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# Local scratch data (the Postgres data lives in the docker-compose volume)
+data/
+
+# Secrets — .env.example is the committed template
+.env
+.env.*
+!.env.example
+
+# CI mutation lane writes this per run (scripts/mutate-changed.mjs)
+stryker.changed.json
+
+# The pr-tour skill writes its review pages here
+.pr-review/
